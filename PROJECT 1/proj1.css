@@ -1,0 +1,154 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    height:100vh;
+    width:100vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.outer-container{
+    height:500px;
+    width:500px;
+    border-radius: 30px;
+    border:2px solid black;
+    position: fixed;
+}
+
+.color-container{
+    height:40%;
+    width:100%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: blueviolet;
+}
+
+.info-container{
+    height:60%;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lcs-icons{
+    height:75px;
+    width:100%;
+    position:absolute;
+    top:425px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    display:flex;
+    align-items: center;
+    flex-direction:row;
+    justify-content: space-around;
+}
+
+.lcs-icons .like,.comment{
+    border-right: 1px solid black;
+}
+
+.buttons{
+    height:75px;
+    width:100%;
+    position:absolute;
+    top:350px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.buttons button{
+    height:50%;
+    width:25%;
+    color: white;
+    background-color: rgba(0,0,255,0.7);
+    border-radius: 20px;
+    transform: scale(1);
+}
+
+.buttons button:hover{
+    transform: scale(1.2);
+    background-color: blue;
+    transition:transform 0.5s ease-out;
+}
+
+.style-icons{
+    height:75px;
+    width: 100%;
+    position:absolute;
+    top:275px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 25px;
+}
+
+.style-icons div{
+    height:40px;
+    width:40px;
+    border:1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.facebook{
+    background-color: blue;
+    color:white;
+}
+.twitter{
+    background-color: lightskyblue;
+    color:white;
+}
+.instagram{
+    background-color: palevioletred;
+    color:white;
+}
+
+.youtube{
+    background-color: red;
+    color:white;
+}
+
+.info{
+    height:50px;
+    width:100%;
+    position:absolute;
+    top:225px;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.info .chann{
+    font-size: 30px;
+}
+
+.info .prof{
+    font-size: 20px;
+}
+
+.color-container .img{
+    height:150px;
+    width:150px;
+    position:absolute;
+    top:75px;
+    left:175px;
+    border-radius: 50%;
+}
+
+.color-container img{
+    height:150px;
+    width:150px;
+    border-radius: 50%;
+}

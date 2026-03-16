@@ -1,0 +1,156 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+}
+
+html,body{
+    height:100%;
+}
+
+body{
+    height: 100%;
+    background-image: url("background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar{
+    margin:1rem;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    display:inline-block;
+    margin:0.5rem;
+}
+
+.logo img{
+    margin:0.2rem;
+}
+
+.options{
+    display:inline-block;
+    margin:0.5rem;
+}
+
+.options span{
+    font-size: 1.5rem;
+    margin:1rem;
+    color:rgba(0,0,0,0.7)
+}
+
+.search_bar{
+    display:flex;
+    border:2px solid black;
+    border-radius: 1rem;
+    margin:0.5rem;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(0,0,0,0.1)
+}
+
+.search_bar i{
+    border-right:3px solid black;
+    display: inline-block;
+    padding-right: 2rem;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.search_bar input{
+    display: inline-block;
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    padding-left: 0.75rem;
+    border:none;
+    outline:none;
+    background-color:rgba(0,0,0,0.1)
+}
+
+.material{
+    position:absolute;
+    top:12rem;
+    left:5rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.material .details{
+    margin:2rem 2rem 0.5rem 2rem;
+}
+
+.material .details .head span{
+    font-size:2rem ;
+}
+
+.material .details .name span{
+    font-size:6rem;
+    font-weight: 900;
+}
+
+.material .details .info{
+    display: flex;
+    flex-direction: row;
+}
+
+.material .details .info div{
+    font-size:4rem;
+    font-weight:500;
+}
+
+.material .details .info .normal_text{
+    margin-right: 0.8rem;
+}
+
+.material .details .info .animate_box{
+    overflow:hidden;
+}
+
+.material .details .info .animate_box .animate_text{
+    display: inline-block;
+    width:19ch;
+    white-space: nowrap;
+    font-size: 4rem;
+    font-weight: 500;
+    animation: typing 3s steps(19) infinite alternate;
+}
+
+@keyframes typing{
+    from{ width:0; }
+    to{ width:19ch; }
+}
+
+.material .buttons{
+    margin:0.5rem 2rem 2rem 2rem;
+    padding:1rem;
+    display:inline-block;
+}
+
+.material .buttons div{
+    display: inline-block;
+    margin-left: 1rem;
+    margin-left: 1rem;
+}
+
+.material .buttons button{
+    background:linear-gradient(to left, rgba(0,255,0,0.5), rgba(0,0,255,0.5));
+    font-size:1rem;
+    padding:0.5rem;
+    border-radius: 1rem;
+}
+
+
+

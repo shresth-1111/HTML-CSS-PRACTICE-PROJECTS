@@ -1,0 +1,139 @@
+*{
+    padding:0;
+    margin:0;   
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(45, 2, 45);
+    height:100vh;
+    width:100vw;
+    position:relative;
+}
+
+.circle_1{
+    height:15rem;
+    width:15rem;
+    border-radius: 50%;
+    position:absolute;
+    top:10%;
+    left:25%;
+    background: linear-gradient(to bottom,rgb(154, 32, 103),white);
+    z-index: 1;
+}
+
+.circle_2{
+    height:15rem;
+    width:15rem;
+    border-radius: 50%;
+    position:absolute;
+    top:40%;
+    left:50%;
+    background: linear-gradient(to bottom,rgb(154, 32, 103),white);
+    z-index: 1;
+}
+
+.card{
+    height:18rem;
+    width:30rem;
+    position:absolute;
+    top:25%;
+    left:30%;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    z-index:50;
+    border-radius:30px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.upper_detail{
+    height:5em;
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.left_detail{
+    height:100%;
+    width:50%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.left_detail i{
+    font-size:30px;
+    margin-left: 1em;
+    margin-right: 0.5em;
+}
+
+.left_detail p{
+    font-size: 30px;
+    color:rgb(231, 219, 219);
+}
+
+.right_detail{
+    height:100%;
+    width:50%;
+    text-align: end;
+    align-items: center;
+}
+
+.right_detail i{
+    font-size:40px;
+    margin:1rem ;
+    color:yellow;
+}
+
+.middle_detail{
+    height:5em;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color:white;
+}
+
+.middle_detail .cardNum{
+    font-size: 20px;
+    margin-left:16px;
+}
+
+.middle_detail .number{
+    font-size: 35px;
+    margin-left:16px;
+}
+
+.lower_detail{
+    height:5em;
+    width:100%;
+    display:flex;
+    color:white;
+}
+
+.lower_right_detail{
+    height:100%;
+    width:50%;
+    text-align: end;
+}
+
+.lower_left_detail{
+    height:100%;
+    width:50%;
+}
+
+.lower_left_detail p{
+    font-size: 20px;
+    margin:1.2rem;
+}
+
+.lower_right_detail p{
+    font-size: 15px;
+    margin:1.2rem;
+}

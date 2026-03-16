@@ -1,0 +1,114 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box ;
+}
+
+html,body{
+    min-height:100%;
+}
+
+body{
+    min-height:100vh;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("setup_image.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+}
+
+/* HAMBURGER STYLING */
+
+.hamburgar_menu{
+    padding:1.5rem;
+    display:inline-block;
+}
+
+.hamburgar_menu i{
+    font-size: 3rem;
+    transform: scale(1);
+}
+
+input{
+    position:absolute;
+    opacity:0;
+}
+
+.hamburgar_menu i:hover{
+    transform: scale(1.2);
+    transition:transform 0.5s ease-out;
+}
+
+
+.sidebar_menu{
+    min-height: 100vh;
+    display: inline-flex;
+    flex-direction: column;
+    position:absolute;
+    left:-800px;
+}
+
+.sidebar_menu .head{
+    padding:1.5rem;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color:white;
+}
+
+.sidebar_menu .head p{
+    font-size: 2.5rem;
+    margin-right: 10rem;
+}
+
+.sidebar_menu .head i{
+    font-size: 2rem;
+    transform:scale(1);
+}
+
+.sidebar_menu .head i:hover{
+    transform: scale(1.2);
+    transition:transform 0.5s ease-out;
+}
+
+.sidebar_menu .board_options{
+    padding:0.5rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.sidebar_menu .board_options div{
+    padding:1.5rem;
+    margin-bottom:0.5rem;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    color:white;
+}
+
+.sidebar_menu .board_options div:hover{
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.8);
+}
+
+.sidebar_menu .board_options p{
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+
+.sidebar_menu div i{
+    margin-left: 1rem;
+}
+
+input[type="checkbox"]:checked~.sidebar_menu{
+    position:absolute;
+    left:0px;
+    transition:left 1s ease-out;
+}
+
+input[type="checkbox"]:checked~.hamburgar_menu{
+    position: absolute;
+    opacity: 0;
+}
+
